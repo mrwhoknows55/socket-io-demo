@@ -15,6 +15,7 @@ const allowedOrigins = [
   "http://localhost",
   "http://192.168.1.11",
   "http://socket-io-demo.mrwhoknows.com",
+  "*", // TODO remove
 ];
 app.use(
   cors({

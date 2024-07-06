@@ -87,7 +87,10 @@
         </div>
 
         <script>
-            const socket = io("http://localhost:3000");
+            const socket = io("https://socket-io-demo-hrnu.onrender.com", {
+                transports: ["websocket"],
+                upgrade: false,
+            });
             const loginForm = document.getElementById("login-form");
             const messageForm = document.getElementById("message-form");
             const usernameInput = document.getElementById("username-input");

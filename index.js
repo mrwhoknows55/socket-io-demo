@@ -41,6 +41,7 @@ const io = new Server(server, {
     origin: allowedOrigins,
     methods: ["GET", "POST"],
   },
+  allowEIO3: true,
 });
 
 io.on("connection", (socket) => {
